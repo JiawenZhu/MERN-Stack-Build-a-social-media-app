@@ -1,7 +1,7 @@
-# MERN Stack - Build a social media app 
+# MERN Stack - Build a social media app fix to match REACT 6
 > MERN Stack Build  a social media app (instagram , facebook, twitter clone) with MERN  + Redux  + Bootstrap 4
 
-## Author: Dev A.T Viet Nam
+## Author: Dev A.T Viet Nam && Jiawen
 
 ## Youtube tutorials: https://www.youtube.com/watch?v=DLtVKgkCKx8&list=PLs4co9a6NhMyAfSnDg1MKGwLdLx0OA07d
 
