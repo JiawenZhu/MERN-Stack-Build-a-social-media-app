@@ -21,7 +21,7 @@ const StatusModal = () => {
         const files = [...e.target.files]
         let err = ""
         let newImages = []
-
+        console.log(e.target.files);
         files.forEach(file => {
             if(!file) return err = "File does not exist."
 
