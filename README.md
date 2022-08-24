@@ -3,8 +3,6 @@
 
 ## Author: Dev A.T Viet Nam && Jiawen
 
-## Youtube tutorials: https://www.youtube.com/watch?v=DLtVKgkCKx8&list=PLs4co9a6NhMyAfSnDg1MKGwLdLx0OA07d
-
 ## Install dependencies for server 
 ### `npm install`
 
@@ -24,4 +22,4 @@
 
 ### Server runs on http://localhost:5001 and client on http://localhost:3000
 
-
+## Youtube tutorials: https://www.youtube.com/watch?v=DLtVKgkCKx8&list=PLs4co9a6NhMyAfSnDg1MKGwLdLx0OA07d
