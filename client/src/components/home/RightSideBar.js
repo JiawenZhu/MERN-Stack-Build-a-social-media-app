@@ -38,16 +38,13 @@ const RightSideBar = () => {
             }
 
             <div style={{opacity: 0.5}} className="my-2" >
-                <a href="https://www.youtube.com/c/DevATHTML" target="_blank" rel="noreferrer"
-                style={{wordBreak: 'break-all'}} >
-                    https://www.youtube.com/c/DevATHTML
-                </a>
                 <small className="d-block">
-                    Welcome to our channel "DevAT-VietNam"
+                    Welcome to our channel "转一转"
                 </small>
 
                 <small>
-                   &copy; 2021 V-NETWORK FROM DEV A.T VIET NAM
+                   &copy; 2022 转一转 （香槟华人社交网
+                   <br></br>信息包括：租房信息，买卖二手，超市信息等等
                 </small>
             </div>
 
