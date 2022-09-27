@@ -15,7 +15,7 @@ const RightSideBar = () => {
             <UserCard user={auth.user} />
 
             <div className="d-flex justify-content-between align-items-center my-2">
-                <h5 className="text-danger">Suggestions for you</h5>
+                <h5 className="text-danger">新添加的朋友们！</h5>
                 {
                     !suggestions.loading &&
                     <i className="fas fa-redo" style={{cursor: 'pointer'}}
@@ -44,7 +44,7 @@ const RightSideBar = () => {
 
                 <small>
                    &copy; 2022 转一转 （香槟华人社交网
-                   <br></br>信息包括：租房信息，买卖二手，超市信息等等
+                   信息涵盖：租房信息，买卖二手，超市信息等等）
                 </small>
             </div>
 

@@ -20,7 +20,7 @@ const CardFooter = ({post}) => {
     const [saved, setSaved] = useState(false)
     const [saveLoad, setSaveLoad] = useState(false)
 
-    // Likes
+    // likes
     useEffect(() => {
         if(post.likes.find(like => like._id === auth.user._id)){
             setIsLike(true)

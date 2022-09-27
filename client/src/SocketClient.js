@@ -31,7 +31,7 @@ const SocketClient = () => {
         socket.emit('joinUser', auth.user)
     },[socket, auth.user])
 
-    // Likes
+    // likes
     useEffect(() => {
         socket.on('likeToClient', newPost =>{
             dispatch({type: POST_TYPES.UPDATE_POST, payload: newPost})

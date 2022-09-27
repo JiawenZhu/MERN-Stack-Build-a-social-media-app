@@ -55,16 +55,16 @@ const CardHeader = ({post}) => {
                         auth.user._id === post.user._id &&
                         <>
                             <div className="dropdown-item" onClick={handleEditPost}>
-                                <span className="material-icons">create</span> Edit Post
+                                <span className="material-icons">create</span> 编辑 Post
                             </div>
                             <div className="dropdown-item" onClick={handleDeletePost} >
-                                <span className="material-icons">delete_outline</span> Remove Post
+                                <span className="material-icons">delete_outline</span> 删除 Post
                             </div>
                         </>
                     }
 
                     <div className="dropdown-item" onClick={handleCopyLink}>
-                        <span className="material-icons">content_copy</span> Copy Link
+                        <span className="material-icons">content_copy</span> 复制 链接
                     </div>
                 </div>
             </div>
