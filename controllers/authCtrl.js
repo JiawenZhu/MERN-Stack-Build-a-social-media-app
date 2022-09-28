@@ -12,7 +12,7 @@ const authCtrl = {
             if(user_name) return res.status(400).json({msg: "This 名字 already exists."})
 
             const user_email = await Users.findOne({email})
-            if(user_email) return res.status(400).json({msg: "This email already exists."})
+            if(user_email) return res.status(400).json({msg: "This 邮箱 already exists."})
 
             if(password.length < 6)
             return res.status(400).json({msg: "Password must be at least 6 characters."})
@@ -54,10 +54,10 @@ const authCtrl = {
             const user = await Users.findOne({email})
             .populate("followers following", "avatar username fullname followers following")
 
-            if(!user) return res.status(400).json({msg: "This email does not exist."})
+            if(!user) return res.status(400).json({msg: "这个邮箱不存在，请再试试其它邮箱."})
 
             const isMatch = await bcrypt.compare(password, user.password)
-            if(!isMatch) return res.status(400).json({msg: "Password is incorrect."})
+            if(!isMatch) return res.status(400).json({msg: "密码输入不正确，请在输入一次吧！."})
 
             const access_token = createAccessToken({id: user._id})
             const refresh_token = createRefreshToken({id: user._id})
@@ -69,7 +69,7 @@ const authCtrl = {
             })
 
             res.json({
-                msg: 'Login Success!',
+                msg: '登入成功!',
                 access_token,
                 user: {
                     ...user._doc,
