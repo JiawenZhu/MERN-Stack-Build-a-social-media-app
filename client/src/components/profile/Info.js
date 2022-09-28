@@ -46,7 +46,7 @@ const Info = ({id, auth, profile, dispatch}) => {
                                     user._id === auth.user._id
                                     ?  <button className="btn btn-outline-info"
                                     onClick={() => setOnEdit(true)}>
-                                        Edit Profile
+                                        修改个人资料
                                     </button>
                                     
                                     : <FollowBtn user={user} />

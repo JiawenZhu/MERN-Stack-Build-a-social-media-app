@@ -62,7 +62,7 @@ const EditProfile = ({setOnEdit}) => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="fullname">Full Name</label>
+                    <label htmlFor="fullname">名</label>
                     <div className="position-relative">
                         <input type="text" className="form-control" id="fullname"
                         name="fullname" value={fullname} onChange={handleInput} />
