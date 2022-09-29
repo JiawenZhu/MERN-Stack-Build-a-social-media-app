@@ -24,7 +24,7 @@ const CallModal = () => {
     useEffect(() => {
         const setTime = () => {
             setTotal(t => t + 1)
-            setTimeout(setTime, 1000)
+            setTimeout(setTime, 2000)
         }
         setTime()
 

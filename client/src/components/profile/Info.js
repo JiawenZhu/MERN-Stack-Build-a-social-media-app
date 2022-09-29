@@ -64,12 +64,8 @@ const Info = ({id, auth, profile, dispatch}) => {
                                 </span>
                             </div>
 
-                            <h6>{user.fullname} <span className="text-danger">{user.mobile}</span></h6>
-                            <p className="m-0">{user.address}</p>
-                            <a href={user.website} target="_blank" rel="noreferrer">
-                                {user.website}
-                            </a>
-                            <p>{user.story}</p>
+                            {/* <h6>{user.fullname} <span className="text-danger">{user.mobile}</span></h6> */}
+                            <p className="m-0">交易地址：{user.address}</p>
                         </div>
 
                         {

@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://spinandspin-devat.herokuapp.com'
+export const BASE_URL = 'http://handstohandsmassage.com/'

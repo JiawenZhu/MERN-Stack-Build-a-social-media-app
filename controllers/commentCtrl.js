@@ -39,7 +39,7 @@ const commentCtrl = {
                 _id: req.params.id, user: req.user._id
             }, {content})
 
-            res.json({msg: 'Update Success!'})
+            res.json({msg: '保存成功啦!'})
 
         } catch (err) {
             return res.status(500).json({msg: err.message})

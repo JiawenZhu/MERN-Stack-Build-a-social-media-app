@@ -31,7 +31,7 @@ const userCtrl = {
                 avatar, fullname, mobile, address, story, website, gender
             })
 
-            res.json({msg: "Update Success!"})
+            res.json({msg: "保存成功，可以按返回啦!"})
 
         } catch (err) {
             return res.status(500).json({msg: err.message})
