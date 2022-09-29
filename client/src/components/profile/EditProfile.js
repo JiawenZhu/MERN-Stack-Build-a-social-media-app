@@ -85,11 +85,11 @@ const EditProfile = ({setOnEdit}) => {
                     className="form-control" onChange={handleInput} />
                 </div>
 
-                <div className="form-group">
+                {/* <div className="form-group">
                     <label htmlFor="website">Website</label>
                     <input type="text" name="website" value={website}
                     className="form-control" onChange={handleInput} />
-                </div>
+                </div> */}
 
                 <div className="form-group">
                     <label htmlFor="story">Story</label>

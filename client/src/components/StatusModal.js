@@ -76,10 +76,10 @@ const StatusModal = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if(images.length === 0)
-        return dispatch({ 
-            type: GLOBALTYPES.ALERT, payload: {error: "Please add your photo."}
-        })
+        // if(images.length === 0)
+        // return dispatch({ 
+        //     type: GLOBALTYPES.ALERT, payload: {error: "Please add your photo."}
+        // })
 
         if(status.onEdit){
             dispatch(updatePost({content, images, auth, status}))
@@ -108,7 +108,7 @@ const StatusModal = () => {
         <div className="status_modal">
             <form onSubmit={handleSubmit}>
                 <div className="status_header">
-                    <h5 className="m-0">Create a post</h5>
+                    <h5 className="m-0">创建 一个 post</h5>
                     <span onClick={() => dispatch({
                         type: GLOBALTYPES.STATUS, payload: false
                     })}>
@@ -191,7 +191,7 @@ const StatusModal = () => {
 
                 <div className="status_footer">
                     <button className="btn btn-secondary w-100" type="submit">
-                        Post
+                        上传
                     </button>
                 </div>
 
