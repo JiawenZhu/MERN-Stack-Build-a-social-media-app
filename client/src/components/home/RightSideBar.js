@@ -39,11 +39,11 @@ const RightSideBar = () => {
 
             <div style={{opacity: 0.5}} className="my-2" >
                 <small className="d-block">
-                    Welcome to our channel "转一转"
+                    Welcome to our channel "转手"
                 </small>
 
                 <small>
-                   &copy; 2022 转一转 （香槟华人社交网
+                   &copy; 2022 转手 （香槟华人社交网
                    信息涵盖：租房信息，买卖二手，超市信息等等）
                 </small>
             </div>

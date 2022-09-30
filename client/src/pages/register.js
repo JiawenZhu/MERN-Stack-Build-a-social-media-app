@@ -35,7 +35,7 @@ const Register = () => {
     return (
         <div className="auth_page">
             <form onSubmit={handleSubmit}>
-                <h3 className="text-uppercase text-center mb-4">转一转</h3>
+                <h3 className="text-uppercase text-center mb-4">转手</h3>
 
                 <div className="form-group">
                     <label htmlFor="fullname">姓名</label>
