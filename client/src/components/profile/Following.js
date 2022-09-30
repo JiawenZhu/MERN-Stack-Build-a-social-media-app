@@ -8,7 +8,7 @@ const Following = ({users, setShowFollowing}) => {
     return (
         <div className="follow">
             <div className="follow_box">
-                <h5 className="text-center">{auth.user.username}关注的</h5>
+                <h5 className="text-center">{}关注的</h5>
                 <hr/>
 
                 <div className="follow_content">
