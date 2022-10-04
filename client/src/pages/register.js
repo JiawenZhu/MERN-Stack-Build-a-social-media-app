@@ -38,7 +38,7 @@ const Register = () => {
                 <h3 className="text-uppercase text-center mb-4">转手</h3>
 
                 <div className="form-group">
-                    <label htmlFor="fullname">姓名</label>
+                    <label htmlFor="fullname">姓名( Last and First Name)</label>
                     <input type="text" className="form-control" id="fullname" name="fullname"
                     onChange={handleChangeInput} value={fullname}
                     style={{background: `${alert.fullname ? '#fd2d6a14' : ''}`}} />
@@ -49,7 +49,7 @@ const Register = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="username">用户名（唯一的）</label>
+                    <label htmlFor="username">用户名（唯一的）(A Unique Username)</label>
                     <input type="text" className="form-control" id="username" name="username"
                     onChange={handleChangeInput} value={username.toLowerCase().replace(/ /g, '')}
                     style={{background: `${alert.username ? '#fd2d6a14' : ''}`}} />
@@ -60,7 +60,7 @@ const Register = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">邮箱地址</label>
+                    <label htmlFor="exampleInputEmail1">邮箱地址（Email）</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" name="email"
                     onChange={handleChangeInput} value={email}
                     style={{background: `${alert.email ? '#fd2d6a14' : ''}`}} />
@@ -71,7 +71,7 @@ const Register = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="exampleInputPassword1">密码</label>
+                    <label htmlFor="exampleInputPassword1">密码(Password)</label>
 
                     <div className="pass">
                         
@@ -81,7 +81,7 @@ const Register = () => {
                         style={{background: `${alert.password ? '#fd2d6a14' : ''}`}} />
 
                         <small onClick={() => setTypePass(!typePass)}>
-                            {typePass ? '隐藏' : '显示'}
+                            {typePass ? '隐藏(hide)' : '显示(show)'}
                         </small>
                     </div>
 
@@ -91,7 +91,7 @@ const Register = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="cf_password">确认密码</label>
+                    <label htmlFor="cf_password">确认密码 (Confirm Email)</label>
 
                     <div className="pass">
                         
@@ -112,27 +112,30 @@ const Register = () => {
 
                 <div className="row justify-content-between mx-0 mb-1">
                     <label htmlFor="male">
-                        男: <input type="radio" id="male" name="gender"
+                        男:(Male) <input type="radio" id="male" name="gender"
                         value="male" defaultChecked onChange={handleChangeInput} />
                     </label>
 
                     <label htmlFor="female">
-                        女: <input type="radio" id="female" name="gender"
+                        女:(Female) <input type="radio" id="female" name="gender"
                         value="female" onChange={handleChangeInput} />
                     </label>
 
                     <label htmlFor="other">
-                        其他: <input type="radio" id="other" name="gender"
+                        其他:(Other) <input type="radio" id="other" name="gender"
                         value="other" onChange={handleChangeInput} />
                     </label>
                 </div>
                 
                 <button type="submit" className="btn btn-dark w-100">
-                    注册
+                    注册 Register
                 </button>
 
                 <p className="my-2">
                     已经有账户了？ <Link to="/" style={{color: "crimson"}}>登入</Link>
+                </p>
+                <p className="my-2">
+                    Already have a account <Link to="/" style={{color: "crimson"}}>Login</Link>
                 </p>
             </form>
         </div>

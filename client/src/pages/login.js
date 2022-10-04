@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { login } from "../redux/actions/authAction";
 import { useDispatch, useSelector } from "react-redux";
-
+import Discover from "./discover";
 const Login = () => {
   const initialState = { email: "", password: "" };
   const [userData, setUserData] = useState(initialState);
@@ -31,7 +31,9 @@ const Login = () => {
     "https://res.cloudinary.com/pengushe-home/image/upload/w_50,h_50,f_auto/v1664551849/profile_img/111664402955_.pic_eze9wu.jpg";
 
   return (
+    
     <div className="auth_page">
+    {/* <Discover /> */}
       <form onSubmit={handleSubmit}>
         <div className="container ">
           <h3 className="text-uppercase text-center">转手</h3>
@@ -41,7 +43,7 @@ const Login = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="exampleInputEmail1">邮箱</label>
+          <label htmlFor="exampleInputEmail1">邮箱(Email)</label>
           <input
             type="email"
             className="form-control"
@@ -58,7 +60,7 @@ const Login = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="exampleInputPassword1">密码</label>
+          <label htmlFor="exampleInputPassword1">密码(Password)</label>
 
           <div className="pass">
             <input
@@ -71,7 +73,7 @@ const Login = () => {
             />
 
             <small onClick={() => setTypePass(!typePass)}>
-              {typePass ? "隐藏" : "显示"}
+              {typePass ? "隐藏(hide)" : "显示(show)"}
             </small>
           </div>
         </div>
@@ -81,13 +83,19 @@ const Login = () => {
           className="btn btn-dark w-100"
           disabled={email && password ? false : true}
         >
-          登入
+          登入 Login
         </button>
 
         <p className="my-2">
           还没有注册?{" "}
           <Link to="/register" style={{ color: "crimson" }}>
             马上注册
+          </Link>
+        </p>
+        <p className="my-2">
+          Don't have a account?{" "}
+          <Link to="/register" style={{ color: "crimson" }}>
+            Register Now
           </Link>
         </p>
       </form>
